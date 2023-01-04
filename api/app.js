@@ -5,10 +5,10 @@ const passport = require('./middlewares/authentication');
 const path = require('path');
 const db = require('./models');
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 const { io } = require('./utils/socket.js');
-const swaggerFile = require('../swagger_output.json')
-const swaggerUi = require("swagger-ui-express");
+const swaggerFile = require('../swagger_output.json');
+const swaggerUi = require('swagger-ui-express');
 
 // this lets us parse 'application/json' content in http requests
 app.use(express.json());

@@ -23,10 +23,11 @@ function Home() {
           <div className="container-home rounded">
             <h2 className="header text-center">Welcome to e-Study!</h2>
             <div className="content justify-content-center">
-              <p className="p-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                assumenda modi sapiente totam? Soluta asperiores a unde
-                molestias
+              <p className="p-2 text-start">
+                <h1 style={{ margin: '0', display: 'inline-block' }}>A</h1>
+                &nbsp;&nbsp;platform that allows users to create and participate
+                in Kahoot-style quizzes, as well as engage in discussions
+                through the use of forums.
               </p>
               <img
                 className="img-section p-2 rounded"
@@ -37,10 +38,12 @@ function Home() {
             <br />
             <div className="content d-flex flex-row-reverse justify-content-center">
               <p className="p-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                assumenda modi sapiente totam? Soluta asperiores a unde
-                molestias veritatis pariatur tempora quisquam doloribus,
-                incidunt, molestiae quaerat aliquam saepe consectetur ipsam.
+                <h1 style={{ margin: '0', display: 'inline-block' }}>U</h1>sers
+                can create their own rooms where they can host their quizzes and
+                invite others to participate. They can also create forum posts
+                and answer posts made by others in the community. This platform
+                provides a fun and interactive way for users to learn and test
+                their knowledge on a variety of topics.
               </p>
               <img
                 className="img-section p-2 rounded"
@@ -51,9 +54,17 @@ function Home() {
             <br />
             <div className="content d-flex justify-content-center">
               <p className="text-center p-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                assumenda modi sapiente totam? Soluta asperiores a unde
-                molestias
+                <h1 style={{ margin: '0', display: 'inline-block' }}>T</h1>he
+                app e-Study is constantly being updated with new features to
+                enhance the user experience. These updates ensure that the
+                platform remains current and relevant, and provide users with
+                new ways to interact with the content and each other. The
+                addition of new features also allows users to discover new ways
+                to engage with the platform, and keeps them coming back for
+                more. Whether you are creating quizzes, participating in
+                discussions, or simply exploring the various features of the
+                platform, there is always something new and exciting to
+                discover.
               </p>
               <img
                 className="img-section p-2"

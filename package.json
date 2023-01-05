@@ -7,7 +7,7 @@
     "start": "node api/app.js",
     "dev": "nodemon -r dotenv/config api/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "CI=false cd client && npm install && npm run build",
+    "build": "cd client && npm install && npm run build",
     "swagger-autogen": "node swagger.js"
   },
   "author": "",

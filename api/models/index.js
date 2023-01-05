@@ -12,14 +12,18 @@ const db = {};
 let sequelize;
 console.log('Starting database connection');
 if (config.use_env_variable) {
+  console.log('Before sequelize assignment');
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  console.log('After sequelize assignment');
 } else {
+  console.log('Else: Before sequelize assignment');
   sequelize = new Sequelize(
     config.database,
     config.username,
     config.password,
     config
   );
+  console.log('Else: After sequelize assignment');
 }
 
 fs.readdirSync(__dirname)

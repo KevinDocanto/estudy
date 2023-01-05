@@ -26,7 +26,7 @@ function AboutUsPage() {
               <div>
                 <PersonIcon />
                 <div className="mt-3">
-                  <a href="https://www.linkedin.com/in/kevin-d-93615a180/">
+                  <a href="https://www.linkedin.com/in/kevindocanto/">
                     <img
                       className="about-button"
                       style={{ width: '30px' }}

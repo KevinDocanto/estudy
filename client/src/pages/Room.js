@@ -49,7 +49,7 @@ function Room() {
     //fetch existing online users and chats in the room
     fetchPrevChats();
     onlineUsers();
-    const socket = io.connect('http://localhost:8080', {
+    const socket = io.connect('https://estudy-production-c993.up.railway.app/', {
       reconnection: false,
       query: {
         roomId: `${roomId}`,

@@ -5,7 +5,7 @@ const passport = require('./middlewares/authentication');
 const path = require('path');
 const db = require('./models');
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 const { io } = require('./utils/socket.js');
 const swaggerFile = require('../swagger_output.json');
 const swaggerUi = require('swagger-ui-express');
@@ -47,18 +47,16 @@ if (process.env.NODE_ENV === 'production') {
 // update DB tables based on model updates. Does not handle renaming tables/columns
 // NOTE: toggling this to true drops all tables (including data)
 db.sequelize.sync({ force: false });
-console.log('Starting server... before checking');
+
 // start up the server
 if (PORT) {
-  console.log('Starting server...');
   const server = app.listen(PORT, () => console.log(`Listening on ${PORT}`));
   io.attach(server, {
     cors: {
-      origin: 'http://0.0.0.0:3000',
+      origin: 'http://localhost:3000',
       methods: ['GET', 'POST'],
     },
   });
-  console.log('After io');
 } else {
   console.log('===== ERROR ====\nCREATE A .env FILE!\n===== /ERROR ====');
 }

@@ -1,7 +1,7 @@
 const { Server } = require('socket.io');
 const io = new Server();
 const db = require('../models');
-const { User, Room, RoomChat, MicroPost } = db;
+const { User, Room, RoomChat } = db;
 
 var Socket = {
   emit: function (event, data) {

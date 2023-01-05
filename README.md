@@ -1,4 +1,5 @@
-# estudy
+# e-Study
+Hosted at: https://e-study-production.up.railway.app/
 
 ## Stack
 

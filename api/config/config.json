@@ -21,10 +21,5 @@
         "rejectUnauthorized": false
       }
     }
-  },
-  "store": {
-    "adapter": "sequelize",
-    "dialect": "postgres",
-    "url": "postgres://localhost/estudy"
   }
 }

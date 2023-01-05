@@ -1,5 +1,5 @@
 # e-Study
-Hosted at: https://e-study-production.up.railway.app/about-us
+Hosted at: https://e-study-production.up.railway.app/
 
 ## Stack
 

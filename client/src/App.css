@@ -29,10 +29,14 @@ body {
   width: 150px;
 }
 
-/* If the screen size is smaller than 1200px, set the font-size to 80px */
+/* If the screen size is smaller than 1200px, set the font-size to 30px */
 @media (max-width: 1199.98px) {
   .logo-text {
     font-size: 30px;
+    display: none;
+  }
+
+  .login-welcome {
     display: none;
   }
 }

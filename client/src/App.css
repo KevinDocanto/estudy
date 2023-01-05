@@ -29,6 +29,14 @@ body {
   width: 150px;
 }
 
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .logo-text {
+    font-size: 30px;
+    display: none;
+  }
+}
+
 .logo:hover {
   opacity: 0.6;
 }

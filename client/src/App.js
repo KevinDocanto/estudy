@@ -31,7 +31,7 @@ function Navigation() {
               src={require('./imgs/logo.png')}
               alt="logo"
             />
-            <h3 className="ms-2">e-Study</h3>
+            <h3 className="logo-text ms-2">e-Study</h3>
           </div>
         </Link>
         <Greeting />

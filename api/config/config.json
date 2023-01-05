@@ -3,14 +3,14 @@
     "username": "team-meeter",
     "password": "ctp2022",
     "database": "estudy",
-    "host": "0.0.0.0",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "team-meeter",
     "password": "ctp2022",
     "database": "estudy",
-    "host": "0.0.0.0",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {

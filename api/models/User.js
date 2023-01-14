@@ -14,6 +14,13 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         unique: true,
         allowNull: false,
+        validate: {
+          isLongEnough: (val) => {
+            if (val.length < 4) {
+              throw new Error('Please choose a longer username');
+            }
+          },
+        },
       },
       passwordHash: { type: DataTypes.STRING },
       role: {

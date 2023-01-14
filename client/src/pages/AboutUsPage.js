@@ -21,7 +21,7 @@ function AboutUsPage() {
         <h2 className="mb-3">About our Team</h2>
         <div className="row justify-content-around bg-light text-dark rounded-5">
           <div className="col-lg-4 m-5">
-            <h3>Kevin do Canto</h3>
+            <h3>Kevin do Canto </h3>
             <div className="d-flex">
               <div>
                 <PersonIcon />

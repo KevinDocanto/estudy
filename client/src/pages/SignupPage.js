@@ -54,6 +54,28 @@ function SignupPage() {
         <form onSubmit={signup}>
           <div className="form-row">
             {errorMessage}
+            <div className="signup-requirements bg-white ms-3">
+              <ul style={{ listStyleType: 'none' }} className="mx-auto w-75">
+                <li
+                  style={
+                    data.username.length >= 4
+                      ? { color: 'black' }
+                      : { color: 'red' }
+                  }
+                >
+                  Username length must be grater than 3.
+                </li>
+                <li
+                  style={
+                    data.password.length >= 7
+                      ? { color: 'black' }
+                      : { color: 'red' }
+                  }
+                >
+                  Password length must be greater than 6.
+                </li>
+              </ul>
+            </div>
             <input
               type="username"
               className="form-control p-2 m-2"

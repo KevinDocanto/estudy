@@ -34,7 +34,7 @@ function AboutUsPage() {
                       alt=""
                     />
                   </a>
-                  <a href="https://github.com/KevinDocanto">
+                  <a href="https://github.com/chouenji">
                     <img
                       className="about-button"
                       style={{ width: '30px' }}

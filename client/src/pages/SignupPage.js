@@ -8,6 +8,7 @@ function SignupPage() {
   const location = useLocation();
   const [data, setData] = useState({ username: '', password: '' });
   const [error, setError] = useState(false);
+  const [errorText, setErrorText] = useState('');
 
   const from = location.state?.from?.pathname || '/';
 
@@ -35,6 +36,7 @@ function SignupPage() {
       //    user experience.
       navigate(from, { replace: true });
     } catch (error) {
+      setErrorText(error.message);
       setError(true);
     }
   };
@@ -43,7 +45,7 @@ function SignupPage() {
   if (error) {
     errorMessage = (
       <div className="alert alert-danger" role="alert">
-        Sign Up Failed
+        {errorText}
       </div>
     );
   }

@@ -12,7 +12,10 @@ router.post('/signup', (req, res) => {
       user.password = undefined;
       req.login(user, () => res.status(201).json(user));
     })
-    .catch((err) => {
+    .catch((err) => { 
+      if(err?.errors?.[0].message == "username must be unique"){
+        return res.status(400).json({ msg: "The username is already taken. Please choose a different username to sign up with."})
+      }
       res.status(400).json({ msg: 'Failed Signup', err });
     });
 });

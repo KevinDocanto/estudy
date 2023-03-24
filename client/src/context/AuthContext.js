@@ -58,7 +58,8 @@ const AuthProvider = ({ children }) => {
     });
 
     if (!response.ok) {
-      throw new Error('Signup Failed');
+      const data = await response.json()
+      throw new Error(data.msg);
     }
 
     let loggedInUser = await response.json();

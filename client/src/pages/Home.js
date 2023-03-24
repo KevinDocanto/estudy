@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
   const auth = useAuth();
@@ -21,7 +22,19 @@ function Home() {
         <div className="home text-white">
           <h1 className="head-1">New way of learning!</h1>
           <div className="container-home rounded">
-            <h2 className="header text-center">Welcome to e-Study!</h2>
+            <div>
+              <h2 className="header text-center mb-5">Welcome to e-Study!</h2>
+              <div>
+                <h3 className="m-3">Click on</h3>
+                <NavLink to="/signup">
+                <button className="btn btn-login btn-lg btn-primary m-0">
+                  Sign Up
+                </button>
+                </NavLink>
+                <h3 className="m-3">to explore our features</h3>
+              </div>
+              
+            </div>
             <div className="content justify-content-center">
               <p className="p-2 text-start">
                 <span className="h1">A</span>
